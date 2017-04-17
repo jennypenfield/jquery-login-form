@@ -1,34 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Spirax');
 
-#flex {
+#flexContainer {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-image:
+    linear-gradient(
+      #d9b38c,
+      #d9f2e5);
+  background-repeat: no-repeat;
 }
 
 body {
-  background-image:
-    linear-gradient(
-      #8dd8b1,
-      #d9f2e5);
-  background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   text-align: center;
 }
 
 header {
-  background-color: #2d8659;
-  color: #fff;
+  background-color: #26734d;
+  background-image:
+    linear-gradient(
+      #27724e,
+      #349868);
+  border-bottom: 0.1em solid #fff;
+  color: #d9f2e6;
   flex: 2;
   font-family: 'Roboto', sans-serif;
   padding-top: 2em;
 }
 
 #mainHeadingLink {
-  color: #8cd9b3;
-  font-size: 3em;
+  color: #d9f2e6;
+  font-family: 'Spirax', cursive;
+  font-size: 2.7em;
   text-decoration: none;
 }
 
@@ -47,7 +53,7 @@ h1.welcome-user {
 }
 
 h1#loginMessage {
-  color: #2d8659;
+  color: #26734d;
   margin: 0;
   padding-bottom: 1em;
   padding-top: 1em;
@@ -71,23 +77,26 @@ footer {
 
 #bloopFooterList {
   flex: 1;
-  color: #2d8659;
+  color: #26734d;
   order: 2;
   text-align: left;
 }
 
 .login-form {
   background-color: #fff;
+  border: 0.2em solid #26734d;
+  border-radius: 1em;
+  display: inline-table;
   margin: 2em auto 1em auto;
-  width: 20vw;
 }
 
 .input-row {
-  margin-top: 10px;
+  color: #26734d;
+  margin: 1em;
 }
 
 #loginBtn {
-  background: #2d8659;
+  background: #26734d;
   border-radius: 5px;
   border: #fff;
   color: white;
@@ -99,22 +108,23 @@ footer {
 .help-center {
   display: flex;
   margin: 0 auto;
-  padding: 2em;
-  width: 25vw;
+  width: 200px;
 }
 
 #signUp {
-  color: #2d8659;
+  color: #26734d;
   flex: 1;
-  text-align: right;
+  font-size: 0.8em;
+  text-align: left;
 }
 
 #getHelp {
-  color: #2d8659;
+  color: #26734d;
   flex: 1;
+  font-size: 0.8em;
   text-align: right;
 }
 
 a:link {
-  color: #2d8659;
+  color: #26734d;
 }
