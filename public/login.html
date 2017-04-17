@@ -6,43 +6,45 @@
     <title>Login to bloop.xyz</title>
     <meta content="" name="description" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
+<div id="flex">
+  <header>
+      <h1><a href="#" id="mainHeadingLink">bloop.xyz</a></h1>
+      <p id="tagline">Have you blooped today?</p>
+  </header>
 
-<header>
-    <h1><a href="#">bloop.xyz</a></h1>
-    <p class="tagline">Have you blooped today?</p>
-</header>
+  <section id="mainContent">
+      <form class="login-form">
+          <h1 id="loginMessage">Login to bloop.xyz</h1>
+          <div class="input-row"
+              <label for="loginInput">Username:</label>
+              <input class="big-input" type="text" id="loginInput" />
+          </div>
+          <div class="input-row">
+              <label for="passwordInput">Password:</label>
+              <input class="big-input" type="password" id="passwordInput" />
+          </div>
+          <div class="action-row">
+              <button class="primary-btn" id="loginBtn">Log In</button>
+          </div>
+      </form>
+      <div class="help-center">
+          <a href="#" id="signUp">Don't have an account?</a>
+          <a href="#" id="getHelp">Need help logging in?</a>
+      </div>
+  </section>
 
-<section class="main-content">
-    <form class="login-form">
-        <h1>Login to bloop.xyz</h1>
-        <div class="input-row"
-            <label for="loginInput">Username:</label>
-            <input class="big-input" type="text" id="loginInput" />
-        </div>
-        <div class="input-row">
-            <label for="passwordInput">Password:</label>
-            <input class="big-input" type="password" id="passwordInput" />
-        </div>
-        <div class="action-row">
-            <button class="primary-btn" id="loginBtn">Log In</button>
-        </div>
-    </form>
-    <div class="help-center">
-        <a href="#">Don't have an account?</a>
-        <a href="#">Need help logging in?</a>
-    </div>
-</section>
-
-<footer>
-    <ul>
-        <li>&copy; 2017 bloop.xyz</li>
-        <li><a href="#">Terms and Conditions</a></li>
-        <li><a href="#">The Bloop.xyz Guarantee</a></li>
-        <li>Made in Texas</li>
-    </ul>
-</footer>
-
+  <footer>
+    <div id="footerWhiteSpaceLeft"></div>
+      <ul id="bloopFooterList">
+          <li>&copy; 2017 bloop.xyz</li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">The Bloop.xyz Guarantee</a></li>
+          <li>Made in Texas</li>
+      </ul>
+  </footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-image:
+    linear-gradient(
+      #8dd8b1,
+      #d9f2e5);
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #2d8659;
+  color: #fff;
+  flex: 2;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 2em;
+}
+
+#mainHeadingLink {
+  color: #8cd9b3;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+#mainHeadingLink:hover {
+  color: #ccc;
+}
+
+#tagline {
+  font-size: 2em;
+}
+
+h1.welcome-user {
+  margin: 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+h1#loginMessage {
+  color: #2d8659;
+  margin: 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+
+#mainContent {
+  flex: 4;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+#footerWhiteSpaceLeft {
+  flex: 5;
+  order: 1;
+}
+
+#bloopFooterList {
+  flex: 1;
+  color: #2d8659;
+  order: 2;
+  text-align: left;
+}
+
+.login-form {
+  background-color: #fff;
+  margin: 2em auto 1em auto;
+  width: 20vw;
+}
+
+.input-row {
+  margin-top: 10px;
+}
+
+#loginBtn {
+  background: #2d8659;
+  border-radius: 5px;
+  border: #fff;
+  color: white;
+  height: 2em;
+  margin: 20px;
+  width: 5em;
+}
+
+.help-center {
+  display: flex;
+  margin: 0 auto;
+  padding: 2em;
+  width: 25vw;
+}
+
+#signUp {
+  color: #2d8659;
+  flex: 1;
+  text-align: right;
+}
+
+#getHelp {
+  color: #2d8659;
+  flex: 1;
+  text-align: right;
+}
+
+a:link {
+  color: #2d8659;
+}
