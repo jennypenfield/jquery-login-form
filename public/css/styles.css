@@ -7,8 +7,8 @@
   width: 100vw;
   background-image:
     linear-gradient(
-      #d9b38c,
-      #d9f2e5);
+      #adad85,
+      #e1e1d0);
   background-repeat: no-repeat;
 }
 
@@ -22,19 +22,19 @@ header {
   background-color: #26734d;
   background-image:
     linear-gradient(
-      #27724e,
-      #349868);
+      #993366,
+      #73264d);
   border-bottom: 0.1em solid #fff;
-  color: #d9f2e6;
+  color: #ccccb3;
   flex: 2;
   font-family: 'Roboto', sans-serif;
   padding-top: 2em;
 }
 
 #mainHeadingLink {
-  color: #d9f2e6;
+  color: #ccccb3;
   font-family: 'Spirax', cursive;
-  font-size: 2.7em;
+  font-size: 2.5em;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ header {
 }
 
 #tagline {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 h1.welcome-user {
@@ -53,7 +53,7 @@ h1.welcome-user {
 }
 
 h1#loginMessage {
-  color: #26734d;
+  color: #73264d;
   margin: 0;
   padding-bottom: 1em;
   padding-top: 1em;
@@ -65,40 +65,43 @@ h1#loginMessage {
 }
 
 footer {
+  background: linear-gradient(#005266, #007a99);
+  border-top: 0.1em solid #fff;
+  color: #e1e1d0;
   display: flex;
-  flex-direction: row;
   flex: 1;
-}
-
-#footerWhiteSpaceLeft {
-  flex: 5;
-  order: 1;
+  font-family: sans-serif;
+  font-size: 0.85em;
+  width: 100vw;
 }
 
 #bloopFooterList {
-  flex: 1;
-  color: #26734d;
-  order: 2;
+  line-height: 1.6em;
   text-align: left;
+}
+
+#loginContainer {
+  margin: 0 auto;
+  width: 260px;
 }
 
 .login-form {
   background-color: #fff;
-  border: 0.2em solid #26734d;
+  border: 0.15em solid #73264d;
   border-radius: 1em;
   display: inline-table;
   margin: 2em auto 1em auto;
 }
 
 .input-row {
-  color: #26734d;
+  color: #73264d;
   margin: 1em;
 }
 
 #loginBtn {
-  background: #26734d;
+  background: #73264d;
   border-radius: 5px;
-  border: #fff;
+  border: #73264d;
   color: white;
   height: 2em;
   margin: 20px;
@@ -108,23 +111,27 @@ footer {
 .help-center {
   display: flex;
   margin: 0 auto;
-  width: 200px;
+  padding: 1.3em;
 }
 
 #signUp {
-  color: #26734d;
+  color: #73264d;
   flex: 1;
   font-size: 0.8em;
   text-align: left;
 }
 
 #getHelp {
-  color: #26734d;
+  color: #73264d;
   flex: 1;
   font-size: 0.8em;
-  text-align: right;
+  text-align: left;
 }
 
 a:link {
-  color: #26734d;
+  color: #e1e1d0;
+}
+
+a:hover {
+  color: #ccc;
 }
