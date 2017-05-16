@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Spirax');
 
-#flexContainer {
+.flex-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -28,21 +28,21 @@ header {
   color: #ccccb3;
   flex: 2;
   font-family: 'Roboto', sans-serif;
-  padding-top: 2em;
+  padding-top: 1.5em;
 }
 
-#mainHeadingLink {
+.main-heading-link {
   color: #ccccb3;
   font-family: 'Spirax', cursive;
   font-size: 2.5em;
   text-decoration: none;
 }
 
-#mainHeadingLink:hover {
+.main-heading-link:hover {
   color: #ccc;
 }
 
-#tagline {
+.tagline {
   font-size: 1.8em;
 }
 
@@ -52,15 +52,14 @@ h1.welcome-user {
   padding-top: 1em;
 }
 
-h1#loginMessage {
+h1.login-message {
   color: #73264d;
   margin: 0;
   padding-bottom: 1em;
   padding-top: 1em;
 }
 
-
-#mainContent {
+.main-content {
   color: #73264d;
   flex: 4;
 }
@@ -75,12 +74,12 @@ footer {
   width: 100vw;
 }
 
-#bloopFooterList {
+.bloop-footer-list {
   line-height: 1.6em;
   list-style: none;
 }
 
-#loginContainer {
+.login-container {
   margin: 0 auto;
   width: 260px;
 }
@@ -114,14 +113,14 @@ footer {
   padding: 1.3em;
 }
 
-#signUp {
+.sign-up {
   color: #73264d;
   flex: 1;
   font-size: 0.8em;
   text-align: left;
 }
 
-#getHelp {
+.get-help {
   color: #73264d;
   flex: 1;
   font-size: 0.8em;
@@ -134,4 +133,24 @@ a {
 
 a:hover {
   color: #ccc;
+}
+
+@media (max-width: 320px)  {
+  .main-heading-link {
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  .tagline {
+    font-size: 1.2em;
+  }
+
+  footer {
+    font-size: 0.5em;
+  }
+
+  .bloop-footer-list {
+    line-height: 1.2em;
+    list-style: none;
+  }
 }
