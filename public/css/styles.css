@@ -97,7 +97,7 @@ footer {
   margin: 1em;
 }
 
-#loginBtn {
+.login-btn {
   background: #73264d;
   border-radius: 5px;
   border: #73264d;
