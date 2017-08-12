@@ -1,6 +1,6 @@
 # jQuery Login Form
 
-> This is a bonus assignment. Complete it at your own pace.
+<img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide">
 
 ## Problem Description
 
@@ -123,24 +123,3 @@ and wants to know which ones result in a user successfully logging in.
 
 [Markdown]:https://guides.github.com/features/mastering-markdown/
 [marked]:https://github.com/chjj/marked
-
-## Phase 4 - Create New Account Form
-
-> TODO: this phase is not finished yet
-
-## Phase 5 - Capture Analytics
-
-> NOTE: this section is not finished yet
-
-Jenn would like to know what the user does after seeing the help modal. Record
-what the user does and POST a JSON object like the following to `api/login-help`
-upon a successful login:
-
-```json
-{
-  "helpModalWasOpened": true,
-  "helpContentNum": 2,
-  "numFailedLoginAttempts": 2,
-  "secondsTookToLogin": 25.6
-}
-```
