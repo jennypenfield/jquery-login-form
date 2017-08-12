@@ -57,7 +57,7 @@ function showHelpModal () {
     success: function (data) {
       $('.help-modal').addClass('modal-open')
       $('body').addClass('modal-open modal-back')
-      $('.modal-body').html(data)
+      $('.modal-body').html(marked(data))
     }
   })
 }
