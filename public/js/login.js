@@ -9,10 +9,18 @@ function login (evt) {
   if (username !== '' && password !== '') {
     waitingForServer()
     const LOGIN_URL = 'http://127.0.0.1:7979/api/login'
-    let data = {username: username, password: password}
-    $.post(LOGIN_URL, data).done(loginSuccess).fail(loginFail)
+    let userData = {username: username, password: password}
+
+    $.ajax({
+      type: 'POST',
+      url: LOGIN_URL,
+      data: userData,
+      success: loginSuccess,
+      timeout: 15000,
+      error: loginFail
+    })
   } else {
-    window.alert('Please enter a valid username and password')
+    $('.messages-to-user').html('Please enter a valid username and password')
   }
 }
 
@@ -25,10 +33,41 @@ function loginSuccess () {
 }
 
 function loginFail (error) {
+  console.log(error)
   if (error.status === 400) {
-    window.alert('Invalid username or password')
+    $('.messages-to-user').html('Invalid username or password')
   } else {
-    window.alert('Technical difficulties--please try again.')
+    $('.messages-to-user').html('Technical difficulties--please try again.')
   }
   $('#loginBtn').attr('disable', false)
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Help Modal
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$('#getHelpBtn').click(showHelpModal)
+
+function showHelpModal () {
+  console.log('help modal clicked')
+  let helpFileName = 'login-help-' + randomNum(1, 4) + '.md'
+  $.ajax({
+    url: 'http://127.0.0.1:7979/md/' + helpFileName,
+    dataType: 'text',
+    success: function (data) {
+      $('#helpModal, .modal-back').addClass('modal-open')
+      $('.modal-body').html(data)
+    }
+  })
+}
+
+function randomNum (min, max) {
+  return Math.floor(Math.random() * max + min)
+}
+
+$('.close-btn, .x-btn, .modal-back').click(closeHelpModal)
+
+function closeHelpModal () {
+  console.log('close button clicked')
+  $('#helpModal').removeClass('modal-open')
 }

@@ -1,47 +1,54 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta charset='utf-8' />
+    <meta content='ie=edge' http-equiv='x-ua-compatible' />
     <title>Login to bloop.xyz</title>
-    <meta content="" name="description" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <meta content='' name='description' />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no' name='viewport' />
+    <link rel='stylesheet' type='text/css' href='./css/styles.css'>
 </head>
 <body>
-<div class="flex-container">
+<div id='helpModal' class='help-modal'>
+  <button class='primary-btn x-btn'>x</button>
+  <div class='modal-body'></div>
+  <button class='primary-btn close-btn' id='closeBtn'>Close</button>
+</div>
+<div class='modal-back'></div>
+<div class='flex-container'>
   <header>
-      <h1><a href="#" class="main-heading-link">bloop.xyz</a></h1>
-      <p class="tagline">Have you blooped today?</p>
+    <a href='#'><h1 class='main-heading-link'>bloop</h1><h5 class='main-heading-link-ext'>.xyz</h5></a>
+    <p class='tagline'>Have you blooped today?</p>
   </header>
 
-  <section class="main-content">
-    <div class="login-container">
-      <form class="login-form">
-          <h1 class="loginMessage">Login to bloop.xyz</h1>
-          <div class="input-row"
-              <label for="username">Username:</label>
-              <input type="text" id="username" />
+  <section class='main-content'>
+    <div class='login-container'>
+      <form class='login-form'>
+          <h1 class='login-message'>Login to bloop.xyz</h1>
+          <div class='input-row'
+              <label for='username'>Username:</label>
+              <input type='text' id='username' />
           </div>
-          <div class="input-row">
-              <label for="passwordInput">Password:</label>
-              <input type="password" id="password" />
+          <div class='input-row'>
+              <label for='passwordInput'>Password:</label>
+              <input type='password' id='password' />
           </div>
-          <div class="action-row">
-              <button class="login-btn" id="loginBtn">Log In</button>
+          <div class='messages-to-user'></div>
+          <div class='action-row'>
+              <button class='login-btn' id='loginBtn'>Log In</button>
           </div>
         </form>
-      <div class="help-center">
-          <a href="#" class="sign-up">Don't have an account?</a>
-          <a href="#" class="get-help">Need help logging in?</a>
+      <div class='help-center'>
+          <a href='#' class='sign-up' id='signUpBtn'>Set up a new account</a>
+          <a href='#' class='get-help' id='getHelpBtn'>Need help logging in?</a>
       </div>
   </section>
 
   <footer>
-    <ul class="bloop-footer-list">
+    <ul class='bloop-footer-list'>
         <li>&copy; 2017 bloop.xyz</li>
-        <li><a href="#">Terms and Conditions</a></li>
-        <li><a href="#">The Bloop.xyz Guarantee</a></li>
+        <li><a href='#'>Terms and Conditions</a></li>
+        <li><a href='#'>The Bloop.xyz Guarantee</a></li>
         <li>Made in Texas</li>
     </ul>
   </footer>

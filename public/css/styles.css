@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Spirax');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto|Spirax|Dosis');
 
 .flex-container {
   display: flex;
@@ -32,14 +32,21 @@ header {
 }
 
 .main-heading-link {
-  color: #ccccb3;
+  color: white;
+  display: inline;
   font-family: 'Spirax', cursive;
-  font-size: 2.5em;
+  font-size: 6.0em;
   text-decoration: none;
 }
 
 .main-heading-link:hover {
   color: #ccc;
+}
+
+.main-heading-link-ext {
+  color: #ccccb3;
+  display: inline;
+  font-size: 1.3em;
 }
 
 .tagline {
@@ -80,8 +87,8 @@ footer {
 }
 
 .login-container {
-  margin: 0 auto;
-  width: 260px;
+  flex: 3;
+  margin-top: 1vw;
 }
 
 .login-form {
@@ -89,7 +96,8 @@ footer {
   border: 0.15em solid #73264d;
   border-radius: 1em;
   display: inline-table;
-  margin: 2em auto 1em auto;
+  height: 15vw;
+  width: 24vw;
 }
 
 .input-row {
@@ -102,37 +110,90 @@ footer {
   border-radius: 5px;
   border: #73264d;
   color: white;
-  height: 2em;
-  margin: 20px;
-  width: 5em;
+  height: 3em;
+  margin-top: 3vw;
+  width: 7em;
+}
+
+.messages-to-user {
+  color: red;
+  font-family: sans-serif;
+  font-size: 0.8em;
 }
 
 .help-center {
   display: flex;
   margin: 0 auto;
   padding: 1.3em;
+  width: 24vw;
 }
 
 .sign-up {
   color: #73264d;
   flex: 1;
   font-size: 0.8em;
-  text-align: left;
+  margin: 0 auto;
 }
 
 .get-help {
   color: #73264d;
   flex: 1;
   font-size: 0.8em;
-  text-align: center;
+  margin: 0 auto;
+}
+
+.help-modal {
+  background-color: white;
+  border-color: #73264d;
+  border-radius: 5px;
+  visibility: hidden;
+  max-height: 600px;
+  max-width: 500px;
+  overflow: auto;
+  position: fixed;
+    top: 10%;
+    left: 50%;
+  transform: translate(-50%, 10%);
+  z-index: 100;
+}
+
+.modal-open {
+  visibility: visible;
+}
+
+.modal-back {
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  visibility: hidden;
+  z-index: 90;
+}
+
+.x-btn {
+  background-color: gray;
+  float: right;
+}
+
+.close-btn {
+  background-color: #73264d;
+  color: white;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  background-color: black;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 a {
   color: #e1e1d0;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #ccc;
+  color: #005266;
 }
 
 @media (max-width: 320px)  {
