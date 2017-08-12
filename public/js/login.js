@@ -55,7 +55,8 @@ function showHelpModal () {
     url: 'http://127.0.0.1:7979/md/' + helpFileName,
     dataType: 'text',
     success: function (data) {
-      $('#helpModal, .modal-back').addClass('modal-open')
+      $('.help-modal').addClass('modal-open')
+      $('body').addClass('modal-open modal-back')
       $('.modal-body').html(data)
     }
   })
@@ -65,9 +66,11 @@ function randomNum (min, max) {
   return Math.floor(Math.random() * max + min)
 }
 
-$('.close-btn, .x-btn, .modal-back').click(closeHelpModal)
+$('.close-btn, .x-btn').click(closeHelpModal)
+$('.modal-open, .modal-back').click(closeHelpModal)
 
 function closeHelpModal () {
   console.log('close button clicked')
-  $('#helpModal').removeClass('modal-open')
+  $('.help-modal').removeClass('modal-open')
+  $('body').removeClass('modal-open modal-back')
 }
